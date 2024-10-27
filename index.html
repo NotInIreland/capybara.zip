@@ -17,15 +17,76 @@
                 display: inline-block;
                 cursor: pointer;
             }
+
+            img {
+                width: 900px;
+            }
         </style>
     </head>
 
     <body>
         <h1>CAPYBARA!!!!!!!!!!! </h1>
-        <h2>if you like capybaras, click here -> <button onclick="window.location.href='https://github.com/NotInIreland/capybara.zip/raw/d45f594a93a82995b69339a6c896c5246fc88ea7/capybara.zip'">Click me for capybara</button></h2>
+        <h2>if you like capybaras, click here -> <button onclick="window.location.href='https://github.com/NotInIreland/capybara.zip/raw/d45f594a93a82995b69339a6c896c5246fc88ea7/capybara.zip'">Click me for capybara zip!</button></h2>
         <p>this will download a zip file containing capybara photos(not a virus i promise)</p>
 
-        <img src="/capybara.jpg">
+        <button onclick="displayRandomImage()">Click me for a random capybara</button>
+        <br>
+        <br>
+        <script>
+            function displayRandomImage() {
+            const images = [
+                'images/baby!.jpg',
+                'images/bara.jpg',
+                'images/big lizard bara.png',
+                'images/bird!.jpg',
+                'images/butter bara.jpg',
+                'images/capybara + 2 but grown up!.jpg',
+                'images/capybara + 2!.jpg',
+                'images/capybara + 3!!!!.jpg',
+                'images/capybara + 3!.jpg',
+                'images/capybara + 4!!!.jpg',
+                'images/capybara + 5!!!.jpg',
+                'images/capybara!!!!.jpg',
+                'images/capybara.jpg',
+                'images/cat!.jpg',
+                'images/chill bara.png',
+                'images/goat!.jpg',
+                'images/grass capybara!.jpg',
+                'images/green belt!.jpg',
+                'images/in love!.jpg',
+                'images/in the wild!.jpg',
+                'images/many monkeys!.jpeg',
+                'images/might be tea.jpg',
+                'images/monkey!.jpg',
+                'images/piggy back!.jpg',
+                'images/rat!.jpg',
+                'images/river bara!.jpg',
+                'images/shower!.jpg',
+                'images/sleepybara!.jpg',
+                'images/sneaky!.jpg',
+                'images/swim!!.jpg',
+                'images/the capybara walks!!!.jpg',
+                'images/the crew.jpg',
+                'images/the family!.jpg',
+                'images/the pool!.jpg',
+                'images/they kiss!.jpg',
+                'images/tiny!.jpg',
+                'images/turtle!.jpg',
+                'images/with babies!!.jpg',
+                'images/with flamingo!.jpg',
+                'images/yawn.jpg'
+            ];
+            const randomIndex = Math.floor(Math.random() * images.length);
+            const imgElement = document.createElement('img');
+            imgElement.src = images[randomIndex];
+            document.body.appendChild(imgElement);
+            const existingImage = document.querySelector('img.random-capybara');
+            if (existingImage) {
+                existingImage.remove();
+            }
+            imgElement.classList.add('random-capybara');
+        }
+        </script>
     </body>
 
 </html>
