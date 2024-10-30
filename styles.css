@@ -1,0 +1,29 @@
+body {
+    background-color: #97bd6b;
+}
+button {
+    background: #55b651;
+    border-color: rgb(8, 8, 8);
+    border-width: 5x;
+    width: 300px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+img {
+    width: 900px;
+    
+}
+
+.centered {
+    text-align: center;
+
+}
+
+img.random-capybara {
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+}
