@@ -5,6 +5,7 @@
         <title>capybaras are cool</title>
         <link rel="icon" href="/capybara-square.jpg">
         <link rel = "stylesheet" href = "styles.css">
+        <script src="random.js"></script> 
 
     </head>
 
@@ -12,76 +13,14 @@
         <div class="centered">
             <h1>CAPYBARA.ZIP </h1>
             <p>The number ONE website for capybaras</p>
-            <h2>if you like capybaras, click here -> <button onclick="window.location.href='https://github.com/NotInIreland/capybara.zip/raw/d45f594a93a82995b69339a6c896c5246fc88ea7/capybara.zip'">Click me for capybara zip!</button></h2>
+            <h2>if you like capybaras, click here -> <button onclick="window.location.href='https://github.com/NotInIreland/capybara.zip/raw/d45f594a93a82995b69339a6c896c5246fc88ea7/capybara.zip'">Click me for capybara.zip!</button></h2>
             <p>this will download a zip file containing capybara photos(not a virus i promise)</p>
             <br>
         
             <button onclick="displayRandomImage()">Click me for a random capybara</button>
             <br>
             <br>
-        
-        </div>
-        <script>
-                const images = [
-                    'images/baby!.jpg',
-                    'images/bara.jpg',
-                    'images/big lizard bara.png',
-                    'images/bird!.jpg',
-                    'images/butter bara.jpg',
-                    'images/capybara + 2 but grown up!.jpg',
-                    'images/capybara + 2!.jpg',
-                    'images/capybara + 3!!!!.jpg',
-                    'images/capybara + 3!.jpg',
-                    'images/capybara + 4!!!.jpg',
-                    'images/capybara + 5!!!.jpg',
-                    'images/capybara!!!!.jpg',
-                    'images/capybara.jpg',
-                    'images/cat!.jpg',
-                    'images/chill bara.png',
-                    'images/goat!.jpg',
-                    'images/grass capybara!.jpg',
-                    'images/green belt!.jpg',
-                    'images/in love!.jpg',
-                    'images/in the wild!.jpg',
-                    'images/many monkeys!.jpeg',
-                    'images/might be tea.jpg',
-                    'images/monkey!.jpg',
-                    'images/piggy back!.jpg',
-                    'images/rat!.jpg',
-                    'images/river bara!.jpg',
-                    'images/shower!.jpg',
-                    'images/sleepybara!.jpg',
-                    'images/sneaky!.jpg',
-                    'images/swim!!.jpg',
-                    'images/the capybara walks!!!.jpg',
-                    'images/the crew.jpg',
-                    'images/the family!.jpg',
-                    'images/the pool!.jpg',
-                    'images/they kiss!.jpg',
-                    'images/tiny!.jpg',
-                    'images/turtle!.jpg',
-                    'images/with babies!!.jpg',
-                    'images/with flamingo!.jpg',
-                    'images/yawn.jpg'
-                ];
-
-                function displayRandomImage() {
-                    const randomIndex = Math.floor(Math.random() * images.length);
-                    const imgElement = document.querySelector('img.random-capybara');
-
-                    if (imgElement) {
-                        imgElement.src = images[randomIndex];
-                    } else {
-                        const newImgElement = document.createElement('img');
-                        newImgElement.src = images[randomIndex];
-                        newImgElement.classList.add('random-capybara');
-                        newImgElement.alt = "Random capybara image";
-                        document.body.appendChild(newImgElement);
-                    }
-                }    
-        </script>
-
-            
+        </div>  
     </body>
 
 </html>

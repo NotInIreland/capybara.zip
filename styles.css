@@ -12,10 +12,6 @@ button {
     
 }
 
-img {
-    width: 900px;
-    
-}
 
 .centered {
     text-align: center;
@@ -23,7 +19,9 @@ img {
 }
 
 img.random-capybara {
-    width: 900px;
+    height: 600px;
     display: block;
     margin: 0 auto;
 }
+
+
